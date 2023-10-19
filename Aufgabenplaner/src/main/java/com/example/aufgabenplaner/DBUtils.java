@@ -17,7 +17,7 @@ import java.util.Objects;
 
 /**
  * Klasse ist für den Zugriff auf die MySQL Datenbank zuständig.
- * Die Methoden Schreiben Daten und entnommen Sie aus der Datenbank.
+ * Die Methoden Schreiben Daten und entnimmt Sie aus der Datenbank.
  * @author Lukas
  */
 public class DBUtils {    
