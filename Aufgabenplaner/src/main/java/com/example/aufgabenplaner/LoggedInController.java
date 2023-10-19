@@ -492,7 +492,7 @@ public class LoggedInController implements Initializable {
     
     public void showTasksIntent() {
         listTasksSomeday = DBUtils.getTaskListSomeday(Integer.parseInt(pv_userid.getText()), "Someday");
-        ArrayList<String> intent = new ArrayList();
+        ArrayList<String> intent = new ArrayList<>();
         for(int i = 0; i < listTasksSomeday.size(); i++) {
             intent.add(listTasksSomeday.get(i).task_header);
         }

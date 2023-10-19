@@ -350,7 +350,12 @@ public class DBUtils {
             }
         }
     }
-    
+
+    /**
+     * Für den Administrator ist die Funktion zum Verwalten aller Benutzer vorhanden.
+     * Daher wird eine Liste mit allen Benutzer erstellt damit der Admin diese bearbeiten kann.
+     * @return
+     */
     public static ObservableList<com.example.aufgabenplaner.users> getUserList() {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
@@ -403,7 +408,15 @@ public class DBUtils {
         }
         return list;
     }
-    
+
+    /**
+     * Änderungen von Benutzerdaten
+     * @param id
+     * @param username
+     * @param password
+     * @param email
+     * @param type
+     */
     public static void editUser(String id, String username, String password, String email, String type) {
         Connection connection = null;        
         PreparedStatement psUpdate = null;
@@ -442,7 +455,11 @@ public class DBUtils {
             }
         }
     }
-    
+
+    /**
+     * Löschen eiens Benutzers
+     * @param id
+     */
     public static void deleteUser(String id) {
         Connection connection = null;        
         PreparedStatement psUpdate = null;
@@ -476,7 +493,11 @@ public class DBUtils {
             }
         }
     }
-    
+
+    /**
+     * Laden von Benuterdaten für die Profilverwaltung
+     * @param username
+     */
     public static void loadUserData(String username) {
         Connection connection = null;        
         PreparedStatement pst = null;
@@ -522,7 +543,15 @@ public class DBUtils {
             }
         }        
     }
-    
+
+    /**
+     * Neuen Task hinzufügen
+     * @param shortde
+     * @param details
+     * @param date
+     * @param categorie
+     * @param owner
+     */
     public static void addTask(String shortde, String details, Date date, String categorie, int owner) {
         Connection connection = null;        
         PreparedStatement psInsert = null;
@@ -568,7 +597,13 @@ public class DBUtils {
             }
         }
     }
-    
+
+    /**
+     * Laden der für das heutige Datum erstellten Tasks
+     * @param userid
+     * @param categorie
+     * @return
+     */
     public static ObservableList<com.example.aufgabenplaner.Tasks> getTaskListToday(int userid, String categorie) {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
