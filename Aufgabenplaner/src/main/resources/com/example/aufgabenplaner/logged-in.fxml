@@ -21,7 +21,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="671.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aufgabenplaner.LoggedInController">
+<AnchorPane id="AnchorPane" prefHeight="671.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aufgabenplaner.LoggedInController">
    <children>
       <TabPane layoutX="-1.0" prefHeight="671.0" prefWidth="1033.0" style="-fx-background-color: white;" tabClosingPolicy="UNAVAILABLE">
         <tabs>
@@ -33,33 +33,33 @@
                            <children>
                               <AnchorPane prefHeight="647.0" prefWidth="268.0" style="-fx-background-color: #e3e3e3;">
                                  <children>
-                                    <Button alignment="TOP_CENTER" layoutX="24.0" layoutY="53.0" mnemonicParsing="false" onAction="#tabToday" prefHeight="30.0" prefWidth="200.0" text="Today">
+                                    <Button alignment="TOP_CENTER" layoutX="24.0" layoutY="53.0" mnemonicParsing="false" onAction="#tabToday" prefHeight="30.0" prefWidth="200.0" text="Heute">
                                        <font>
                                           <Font name="Arial Rounded MT Bold" size="14.0" />
                                        </font>
                                     </Button>
-                                    <Button alignment="TOP_CENTER" layoutX="24.0" layoutY="94.0" mnemonicParsing="false" onAction="#tabUpcomming" prefHeight="30.0" prefWidth="200.0" text="Upcomming">
+                                    <Button alignment="TOP_CENTER" layoutX="24.0" layoutY="94.0" mnemonicParsing="false" onAction="#tabUpcomming" prefHeight="30.0" prefWidth="200.0" text="Bevorstehend">
                                        <font>
                                           <Font name="Arial Rounded MT Bold" size="14.0" />
                                        </font>
                                     </Button>
-                                    <Button alignment="TOP_CENTER" layoutX="24.0" layoutY="135.0" mnemonicParsing="false" onAction="#tabImportant" prefHeight="30.0" prefWidth="200.0" text="Important">
+                                    <Button alignment="TOP_CENTER" layoutX="24.0" layoutY="135.0" mnemonicParsing="false" onAction="#tabImportant" prefHeight="30.0" prefWidth="200.0" text="Wichtig">
                                        <font>
                                           <Font name="Arial Rounded MT Bold" size="14.0" />
                                        </font>
                                     </Button>
-                                    <Button alignment="TOP_CENTER" layoutX="24.0" layoutY="176.0" mnemonicParsing="false" onAction="#tabSomeday" prefHeight="30.0" prefWidth="200.0" text="Someday">
+                                    <Button alignment="TOP_CENTER" layoutX="24.0" layoutY="176.0" mnemonicParsing="false" onAction="#tabSomeday" prefHeight="30.0" prefWidth="200.0" text="Irgendwann">
                                        <font>
                                           <Font name="Arial Rounded MT Bold" size="14.0" />
                                        </font>
                                     </Button>
-                                    <Button alignment="TOP_CENTER" layoutX="24.0" layoutY="217.0" mnemonicParsing="false" onAction="#tabTrash" prefHeight="30.0" prefWidth="200.0" text="Trash">
+                                    <Button alignment="TOP_CENTER" layoutX="24.0" layoutY="217.0" mnemonicParsing="false" onAction="#tabTrash" prefHeight="30.0" prefWidth="200.0" text="Papierkorb">
                                        <font>
                                           <Font name="Arial Rounded MT Bold" size="14.0" />
                                        </font>
                                     </Button>
                                     <ListView fx:id="listview_intent" layoutX="24.0" layoutY="334.0" prefHeight="226.0" prefWidth="200.0" style="-fx-background-color: #e3e3e3;" />
-                                    <Label layoutX="24.0" layoutY="300.0" text="Intent" textFill="#d79d16">
+                                    <Label layoutX="24.0" layoutY="300.0" text="Anstehend" textFill="#d79d16">
                                        <font>
                                           <Font name="Arial Rounded MT Bold" size="18.0" />
                                        </font>
@@ -79,7 +79,7 @@
                                        <graphic>
                                           <ImageView fitHeight="31.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../../../../refresh.png" />
+                                                <Image url="@../../../refresh.png" />
                                              </image>
                                           </ImageView>
                                        </graphic>
@@ -93,17 +93,17 @@
                                  <children>
                                     <Pane fx:id="pane_upcomming" layoutX="-3.0" layoutY="1.0" prefHeight="644.0" prefWidth="784.0" style="-fx-background-color: white;">
                                        <children>
-                                          <Label layoutX="27.0" layoutY="14.0" text="Upcomming">
+                                          <Label layoutX="27.0" layoutY="14.0" text="Bevorstehend">
                                              <font>
                                                 <Font name="Arial Rounded MT Bold" size="22.0" />
                                              </font></Label>
                                           <TableView fx:id="tv_upcomming" layoutX="27.0" layoutY="62.0" onMouseClicked="#getSelectedTaskUpcomming" prefHeight="528.0" prefWidth="732.0">
                                             <columns>
-                                              <TableColumn fx:id="col_task_upcomming" prefWidth="540.0" text="Task" />
+                                              <TableColumn fx:id="col_task_upcomming" prefWidth="540.0" text="Aufgabe" />
                                               <TableColumn fx:id="col_status_upcomming" prefWidth="191.0" text="Status" />
                                             </columns>
                                           </TableView>
-                                          <Label layoutX="27.0" layoutY="603.0" prefHeight="22.0" prefWidth="208.0" text="Date">
+                                          <Label layoutX="27.0" layoutY="603.0" prefHeight="22.0" prefWidth="208.0" text="Datum">
                                              <font>
                                                 <Font name="Arial Rounded MT Bold" size="18.0" />
                                              </font></Label>
@@ -112,18 +112,18 @@
                                     </Pane>
                                     <Pane fx:id="pane_important" layoutX="-4.0" layoutY="2.0" prefHeight="643.0" prefWidth="786.0" style="-fx-background-color: white;">
                                        <children>
-                                          <Label layoutX="26.0" layoutY="13.0" text="Important">
+                                          <Label layoutX="26.0" layoutY="13.0" text="Wichtig">
                                              <font>
                                                 <Font name="Arial Rounded MT Bold" size="22.0" />
                                              </font></Label>
                                           <Separator layoutX="25.0" layoutY="44.0" prefHeight="3.0" prefWidth="739.0" />
                                           <TableView fx:id="tv_important" layoutX="23.0" layoutY="58.0" onMouseClicked="#getSelectedTaskImportant" prefHeight="537.0" prefWidth="741.0">
                                             <columns>
-                                              <TableColumn fx:id="col_task_important" prefWidth="544.0" text="Task" />
+                                              <TableColumn fx:id="col_task_important" prefWidth="544.0" text="Aufgabe" />
                                               <TableColumn fx:id="col_status_important" prefWidth="196.0" text="Status" />
                                             </columns>
                                           </TableView>
-                                          <Label layoutX="24.0" layoutY="605.0" text="Date">
+                                          <Label layoutX="24.0" layoutY="605.0" text="Datum">
                                              <font>
                                                 <Font name="Arial Rounded MT Bold" size="18.0" />
                                              </font></Label>
@@ -131,18 +131,18 @@
                                     </Pane>
                                     <Pane fx:id="pane_someday" layoutX="-5.0" layoutY="2.0" prefHeight="645.0" prefWidth="788.0" style="-fx-background-color: white;">
                                        <children>
-                                          <Label layoutX="22.0" layoutY="14.0" text="Someday">
+                                          <Label layoutX="22.0" layoutY="14.0" text="Irgendwann">
                                              <font>
                                                 <Font name="Arial Rounded MT Bold" size="22.0" />
                                              </font></Label>
                                           <Separator layoutX="22.0" layoutY="47.0" prefHeight="4.0" prefWidth="743.0" />
                                           <TableView fx:id="tv_someday" layoutX="20.0" layoutY="64.0" onMouseClicked="#getSelectedTaskSomeday" prefHeight="532.0" prefWidth="747.0">
                                             <columns>
-                                              <TableColumn fx:id="col_task_someday" prefWidth="547.0" text="Task" />
+                                              <TableColumn fx:id="col_task_someday" prefWidth="547.0" text="Aufgabe" />
                                               <TableColumn fx:id="col_status_someday" prefWidth="199.0" text="Status" />
                                             </columns>
                                           </TableView>
-                                          <Label layoutX="21.0" layoutY="603.0" text="Date">
+                                          <Label layoutX="21.0" layoutY="603.0" text="Datum">
                                              <font>
                                                 <Font name="Arial Rounded MT Bold" size="18.0" />
                                              </font></Label>
@@ -150,17 +150,17 @@
                                     </Pane>
                                     <Pane fx:id="pane_trash" layoutX="-5.0" layoutY="3.0" prefHeight="643.0" prefWidth="789.0" style="-fx-background-color: white;">
                                        <children>
-                                          <Label layoutX="23.0" layoutY="12.0" text="Trash">
+                                          <Label layoutX="23.0" layoutY="12.0" text="Papierkorb">
                                              <font>
                                                 <Font name="Arial Rounded MT Bold" size="22.0" />
                                              </font></Label>
-                                          <Label layoutX="23.0" layoutY="605.0" text="Date">
+                                          <Label layoutX="23.0" layoutY="605.0" text="Datum">
                                              <font>
                                                 <Font name="Arial Rounded MT Bold" size="18.0" />
                                              </font></Label>
                                           <TableView fx:id="tv_trash" layoutX="21.0" layoutY="61.0" onMouseClicked="#getSelectedTaskTrash" prefHeight="534.0" prefWidth="749.0">
                                             <columns>
-                                              <TableColumn fx:id="col_task_trash" prefWidth="559.0" text="Task" />
+                                              <TableColumn fx:id="col_task_trash" prefWidth="559.0" text="Aufgabe" />
                                               <TableColumn fx:id="col_status_trash" prefWidth="189.0" text="Status" />
                                             </columns>
                                           </TableView>
@@ -169,14 +169,14 @@
                                     </Pane>
                                     <Pane fx:id="pane_today" layoutX="-4.0" layoutY="3.0" prefHeight="643.0" prefWidth="789.0" style="-fx-background-color: white;">
                                        <children>
-                                          <Label layoutX="17.0" layoutY="9.0" prefHeight="27.0" prefWidth="489.0" text="Today Task                                                                  ">
+                                          <Label layoutX="17.0" layoutY="9.0" prefHeight="27.0" prefWidth="489.0" text="Heutige Aufgaben                      ">
                                              <font>
                                                 <Font name="Arial Rounded MT Bold" size="22.0" />
                                              </font>
                                           </Label>
                                           <TableView fx:id="tv_today" layoutX="17.0" layoutY="55.0" onMouseClicked="#getSelectedTaskToday" prefHeight="563.0" prefWidth="490.0">
                                             <columns>
-                                              <TableColumn fx:id="col_task_today" prefWidth="341.0" text="Task" />
+                                              <TableColumn fx:id="col_task_today" prefWidth="341.0" text="Aufgabe" />
                                               <TableColumn fx:id="col_status_today" minWidth="0.0" prefWidth="148.0" text="Status" />
                                             </columns>
                                           </TableView>
@@ -185,14 +185,14 @@
                                                 <Font name="Arial Rounded MT Bold" size="14.0" />
                                              </font>
                                           </TextArea>
-                                          <Label layoutX="533.0" layoutY="9.0" prefHeight="27.0" prefWidth="237.0" text="Notes">
+                                          <Label layoutX="533.0" layoutY="9.0" prefHeight="27.0" prefWidth="237.0" text="Notizen">
                                              <font>
                                                 <Font name="Arial Rounded MT Bold" size="18.0" />
                                              </font>
                                           </Label>
                                           <Separator layoutX="17.0" layoutY="43.0" prefHeight="0.0" prefWidth="488.0" />
                                           <Separator layoutX="533.0" layoutY="43.0" prefHeight="3.0" prefWidth="239.0" />
-                                          <Button fx:id="button_note" layoutX="534.0" layoutY="587.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="239.0" text="Save">
+                                          <Button fx:id="button_note" layoutX="534.0" layoutY="587.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="239.0" text="Speichern">
                                              <font>
                                                 <Font name="Arial Rounded MT Bold" size="14.0" />
                                              </font>
@@ -240,27 +240,27 @@
                                           <Font name="Arial Rounded MT Bold" size="14.0" />
                                        </font>
                                     </TextField>
-                                    <Label layoutX="16.0" layoutY="14.0" text="User ID">
+                                    <Label layoutX="16.0" layoutY="14.0" text="Benutzer ID">
                                        <font>
                                           <Font name="Arial" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label layoutX="241.0" layoutY="14.0" text="Username">
+                                    <Label layoutX="241.0" layoutY="14.0" text="Benutzername">
                                        <font>
                                           <Font name="Arial" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label layoutX="16.0" layoutY="76.0" text="Passsword">
+                                    <Label layoutX="16.0" layoutY="76.0" text="Passwort">
                                        <font>
                                           <Font name="Arial" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label layoutX="241.0" layoutY="76.0" text="Emailadress">
+                                    <Label layoutX="241.0" layoutY="76.0" text="Emailadresse">
                                        <font>
                                           <Font name="Arial" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label layoutX="16.0" layoutY="141.0" text="Type">
+                                    <Label layoutX="16.0" layoutY="141.0" text="Typ">
                                        <font>
                                           <Font name="Arial" size="14.0" />
                                        </font>
@@ -295,31 +295,31 @@
                         <TableView fx:id="tv_userlist" layoutX="279.0" layoutY="93.0" onMouseClicked="#getSelected" prefHeight="536.0" prefWidth="743.0">
                           <columns>
                             <TableColumn fx:id="col_id" prefWidth="85.0" text="ID" />
-                            <TableColumn fx:id="col_user" prefWidth="157.0" text="Username" />
-                              <TableColumn fx:id="col_password" prefWidth="140.0" text="Password" />
-                              <TableColumn fx:id="col_email" prefWidth="201.0" text="Emailadress" />
-                              <TableColumn fx:id="col_type" prefWidth="159.0" text="Type" />
+                            <TableColumn fx:id="col_user" prefWidth="157.0" text="Benutzername" />
+                              <TableColumn fx:id="col_password" prefWidth="140.0" text="Passwort" />
+                              <TableColumn fx:id="col_email" prefWidth="201.0" text="Emailadresse" />
+                              <TableColumn fx:id="col_type" prefWidth="159.0" text="Typ" />
                           </columns>
                         </TableView>
                         <AnchorPane prefHeight="643.0" prefWidth="268.0" style="-fx-background-color: #e3e3e3;">
                            <children>
-                              <TextField fx:id="txt_username" layoutX="34.0" layoutY="102.0" prefHeight="30.0" prefWidth="200.0" promptText="Username">
+                              <TextField fx:id="txt_username" layoutX="34.0" layoutY="102.0" prefHeight="30.0" prefWidth="200.0" promptText="Benutzername">
                                  <font>
                                     <Font name="Arial Rounded MT Bold" size="14.0" />
                                  </font>
                               </TextField>
-                              <PasswordField fx:id="txt_password" layoutX="34.0" layoutY="160.0" prefHeight="30.0" prefWidth="200.0" promptText="Password">
+                              <PasswordField fx:id="txt_password" layoutX="34.0" layoutY="160.0" prefHeight="30.0" prefWidth="200.0" promptText="Passwort">
                                  <font>
                                     <Font name="Arial Rounded MT Bold" size="14.0" />
                                  </font>
                               </PasswordField>
-                              <TextField fx:id="txt_email" layoutX="34.0" layoutY="221.0" prefHeight="30.0" prefWidth="200.0" promptText="Emailadress">
+                              <TextField fx:id="txt_email" layoutX="34.0" layoutY="221.0" prefHeight="30.0" prefWidth="200.0" promptText="Emailadresse">
                                  <font>
                                     <Font name="Arial Rounded MT Bold" size="14.0" />
                                  </font>
                               </TextField>
                               <ComboBox fx:id="chbx_type" layoutX="34.0" layoutY="281.0" prefHeight="30.0" prefWidth="200.0" />
-                              <Button fx:id="button_adduser" layoutX="34.0" layoutY="363.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" text="Add">
+                              <Button fx:id="button_adduser" layoutX="34.0" layoutY="363.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" text="Hinzufügen">
                                  <font>
                                     <Font name="Arial Rounded MT Bold" size="14.0" />
                                  </font>
@@ -329,7 +329,7 @@
                                     <Font name="Arial Rounded MT Bold" size="14.0" />
                                  </font>
                               </Button>
-                              <Button fx:id="button_delete" layoutX="34.0" layoutY="461.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" text="Delete">
+                              <Button fx:id="button_delete" layoutX="34.0" layoutY="461.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" text="Löschen">
                                  <font>
                                     <Font name="Arial Rounded MT Bold" size="14.0" />
                                  </font>
