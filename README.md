@@ -1,5 +1,12 @@
 # Aufgabenplaner
-Eine JavaFX Desktop Anwendung zum Planen von Aufgaben.
+Eine Desktop Anwendung zum Planen von Aufgaben und Verwalten von Benutzern. 
+
+Das Programm wurde mit JavaFX erstellt und verwendet eine MySQL Datenbank zum Speichern von Daten.
+
+## Funktionen:
+- Benutzer können sich Registrieren und damit einen Account erstellen die Daten werden in einer MySQL Datenbank gespeichert.
+- Benutzer können sich mit ihren Login Daten anmelden.
+- 
 
 
 ## Oberfläche:
