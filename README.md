@@ -1,13 +1,15 @@
 # Aufgabenplaner
 Eine Desktop Anwendung zum Planen von Aufgaben und Verwalten von Benutzern. 
 
-Das Programm wurde mit JavaFX erstellt und verwendet eine MySQL Datenbank zum Speichern von Daten.
+Das Programm wurde mit JavaFX erstellt und verwendet eine MySQL Datenbank zum Speichern von Daten. Die Oberfläche mit dem Programm Scene Builder erstellt.
 
 ## Funktionen:
 - Benutzer können sich Registrieren und damit einen Account erstellen die Daten werden in einer MySQL Datenbank gespeichert.
 - Benutzer können sich mit ihren Login Daten anmelden.
-- 
-
+- Benutzer können Aufgaben erstellten und diese mittels eines Status feldes Kategorisieren.
+- Benutzer können ihre Account Daten bearbeiten und ändern.
+- Die Benutzer erhalten eine Rolle bei der Anemdung 'Client' und können damit nur ihre eigenen Daten bearbeiten und sehen.
+- Ein Benutzer mit der Rolle 'Admin' kann alle Benutzer in einer Übersicht sehen und diese Bearbeiten.
 
 ## Oberfläche:
 ### Login
